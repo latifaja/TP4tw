@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+        input {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="t1" placeholder="Enter number 1">
+    <input type="text" id="t2" placeholder="Enter number 2">
+    
+    <div>
+        <input type="button" value="+" style="width: 30px;" onclick="calcule(this)">
+        <input type="button" value="-" style="width: 30px;" onclick="calcule(this)">
+        <input type="button" value="*" style="width: 30px;" onclick="calcule(this)">
+        <input type="button" value="/" style="width: 30px;" onclick="calcule(this)">
+    </div>
+
+    <input type="text" id="t3" placeholder="Result" readonly>
+
+    <script>
+        function calcule(a) {
+            let num1 = parseFloat(document.getElementById('t1').value);
+            let num2 = parseFloat(document.getElementById('t2').value);
+            let resultField = document.getElementById('t3');
+
+            // Check if input values are valid numbers
+            if (isNaN(num1) || isNaN(num2)) {
+                resultField.value = "Error: Invalid Input";
+                return;
+            }
+
+            let result;
+            switch (a.value) {
+                case '+':
+                    result = num1 + num2;
+                    break;
+                case '-':
+                    result = num1 - num2;
+                    break;
+                case '*':
+                    result = num1 * num2;
+                    break;
+                case '/':
+                    result = num2 !== 0 ? num1 / num2 : "Error: Division by zero";
+                    break;
+                default:
+                    result = "Error: Invalid Operation";
+            }
+
+            resultField.value = result;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+        input {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculator D'IMC</h1>
+    <div>
+    <label for=""> poid (kg)</label>
+    <input type="text" name="" id="t1">
+</div>
+<div>
+    <label for="">taille (m)</label>
+    <input type="text" name="" id="t2">
+</div>
+    <input type="button" value = "Calculer" style = "background-color: blue;" onclick="calculer()">
+    <p class="result" id="res"></p>
+<script>
+ function calculer(){
+    let p=document.getElementById('t1').value;
+    let t=document.getElementById('t2').value;
+    let res=document.getElementById('res');
+    let imc = (p / (t * t)).toFixed(2);
+    let interpretation = "";
+
+    if (imc < 18.5) interpretation = "Insuffisance pondérale (maigreur)";
+    else if (imc >= 18.5 && imc < 25) interpretation = "Corpulence normale";
+    else if (imc >= 25 && imc < 30) interpretation = "Surpoids";
+    else if (imc >= 30 && imc < 35) interpretation = "Obésité modérée";
+    else if (imc >= 35 && imc < 40) interpretation = "Obésité sévère";
+    else interpretation = "Obésité morbide ou massive";
+
+
+
+    res.innerHTML = `Votre IMC est de <strong>${imc}</strong>. <br> ${interpretation}.`;
+
+
+ }   
+</script>
+</body>
+</html>
