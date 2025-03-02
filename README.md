@@ -53,7 +53,7 @@ Construire un calculateur d'Indice de Masse Corporelle (IMC) qui calcule et affi
 ### Fonctionnement :
 1. L'utilisateur entre son poids et sa taille.
 2. En cliquant sur le bouton "Calculer", l'IMC est calculé en utilisant la formule :  
-   \[ \text{IMC} = \frac{\text{Poids (kg)}}{\text{Taille}^2 (\text{m}^2)} \]
+  IMC = Poids (kg) / Taille² (m²)
 3. L'IMC calculé est affiché avec un message indiquant la catégorie de l'IMC (par exemple : insuffisance pondérale, normal, surpoids).
 4. Un contrôle des erreurs pour les entrées non numériques est inclus.
 
@@ -73,7 +73,7 @@ Créer une calculatrice scientifique avancée avec diverses fonctions, y compris
   - Constantes : `π`, `e`.
   - Opérations de puissance : `x²`, `xⁿ`.
   - Fonction racine carrée : `√`.
-  - Autres fonctions : `EXP`, `Inv`, et `π`.
+  - Autres fonctions : `EXP`, `Inv`.
   - Un bouton égal pour effectuer le calcul et afficher le résultat.
 - Un bouton de réinitialisation (`CE`) pour effacer l'entrée.
 
