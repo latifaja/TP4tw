@@ -18,6 +18,7 @@ Créer une page web simple avec deux champs de texte et un bouton pour échanger
 1. L'utilisateur saisit des valeurs dans les deux champs de texte.
 2. En cliquant sur le bouton "Permuter", une fonction JavaScript échange les valeurs des deux champs.
 
+![Exercice 1](images/EX1.png)
 ---
 
 ## **Exercice 2 : Calculatrice Simple**
@@ -37,6 +38,7 @@ Créer une calculatrice de base permettant d'effectuer des opérations arithmét
 3. Lorsque l'utilisateur clique sur un bouton d'opération, la fonction JavaScript effectue le calcul correspondant et affiche le résultat.
 4. Un contrôle des erreurs est inclus, comme la gestion des entrées invalides et la division par zéro.
 
+![Exercice 2](images/EX2.png)
 ---
 
 ## **Exercice 3 : Calculateur de l'IMC (Indice de Masse Corporelle)**
@@ -57,6 +59,7 @@ Construire un calculateur d'Indice de Masse Corporelle (IMC) qui calcule et affi
 3. L'IMC calculé est affiché avec un message indiquant la catégorie de l'IMC (par exemple : insuffisance pondérale, normal, surpoids).
 4. Un contrôle des erreurs pour les entrées non numériques est inclus.
 
+![Exercice 3](images/EX3.png)
 ---
 
 ## **Exercice 4 : Calculatrice Scientifique**
@@ -83,6 +86,7 @@ Créer une calculatrice scientifique avancée avec diverses fonctions, y compris
 3. Si l'utilisateur entre des valeurs invalides ou si l'opération provoque une erreur, la calculatrice affiche "Erreur".
 4. JavaScript est utilisé pour traiter les entrées utilisateur et effectuer les calculs, y compris la gestion des constantes mathématiques et des fonctions.
 
+![Exercice 4](images/EX4.png)
 ---
 
 ## **Comment Exécuter les Exercices :**
